@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/user")
-public class ApiController {
+@RequestMapping("/api/temp")
+public class ApiUserController {
 
     @PostMapping("")
     public User user(@RequestBody User user) {
-        log.info("User : {}", user);
+        log.info("Temp : {}", user);
         return user;
     }
 }

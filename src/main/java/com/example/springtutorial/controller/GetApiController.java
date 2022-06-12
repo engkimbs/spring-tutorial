@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/get")
+@RequestMapping("/api4")
 public class GetApiController {
 
     @GetMapping(path="/hello")

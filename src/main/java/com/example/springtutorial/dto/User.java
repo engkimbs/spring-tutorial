@@ -2,21 +2,13 @@ package com.example.springtutorial.dto;
 
 import lombok.*;
 
-import javax.validation.constraints.*;
-
 @Getter
 @Setter
 @ToString
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
-    @NotEmpty
-    @Size(min= 1, max = 10)
     private String name;
-
-    @Min(1)
-    @NotNull
     private int age;
 }

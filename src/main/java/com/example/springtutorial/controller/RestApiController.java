@@ -6,7 +6,7 @@ import com.example.springtutorial.dto.User3;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api1")
 public class RestApiController {
 
     @GetMapping("/test/get/{id}")

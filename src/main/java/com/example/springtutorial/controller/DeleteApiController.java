@@ -3,7 +3,7 @@ package com.example.springtutorial.controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api5")
 public class DeleteApiController {
 
     @DeleteMapping("/delete/{userId}")

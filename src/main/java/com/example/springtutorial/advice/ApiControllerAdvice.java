@@ -1,6 +1,6 @@
 package com.example.springtutorial.advice;
 
-import com.example.springtutorial.controller.ApiController;
+import com.example.springtutorial.controller.ApiController2;
 import com.example.springtutorial.dto.Error;
 import com.example.springtutorial.dto.ErrorResponse;
 import org.springframework.http.HttpStatus;
@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-@RestControllerAdvice(basePackageClasses = ApiController.class)
+@RestControllerAdvice(basePackageClasses = ApiController2.class)
 public class ApiControllerAdvice {
 
     @ExceptionHandler(value=Exception.class)

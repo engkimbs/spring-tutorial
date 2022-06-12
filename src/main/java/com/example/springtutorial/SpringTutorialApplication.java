@@ -1,20 +1,12 @@
 package com.example.springtutorial;
 
-import com.example.springtutorial.dto.Car;
-import com.example.springtutorial.dto.User2;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Arrays;
-import java.util.List;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
+@ServletComponentScan
 public class SpringTutorialApplication {
     public static void main(String[] args) throws JsonProcessingException {
         SpringApplication.run(SpringTutorialApplication.class, args);
