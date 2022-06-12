@@ -25,11 +25,12 @@ import java.util.stream.StreamSupport;
 @RestControllerAdvice(basePackageClasses = ApiController2.class)
 public class ApiControllerAdvice {
 
-    @ExceptionHandler(value=Exception.class)
-    public ResponseEntity exception(Exception e) {
-        System.out.println(e.getClass().getName());
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("");
-    }
+//    @ExceptionHandler(value=Exception.class)
+//    public ResponseEntity exception(Exception e) {
+//        System.out.println(e.getClass().getName());
+//        System.out.println("qwer");
+//        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("");
+//    }
 
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
     public ResponseEntity methodArgumentNotValidException(MethodArgumentNotValidException e, HttpServletRequest httpServletRequest) {
