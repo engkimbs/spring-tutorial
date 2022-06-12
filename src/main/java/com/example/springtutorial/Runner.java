@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Runner implements ApplicationRunner {
-
     @Override
     public void run(ApplicationArguments args) {
         Power110V power110V = new Cleaner();
